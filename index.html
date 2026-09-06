@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather Application</h1>
+
+        <p class="subtitle">
+            Search for a city to check the current weather
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Loading Message -->
+        <div id="loading" class="loading">
+            Loading weather...
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error"></div>
+
+        <!-- Weather Card -->
+        <div id="weatherCard" class="weather-card">
+
+            <h2 id="cityName">City</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                ☀️
+            </div>
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <p id="condition" class="condition">
+                Weather Condition
+            </p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong>
+                        <span id="humidity">--</span>%
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong>
+                        <span id="windSpeed">--</span> km/h
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            Weather data provided by Open-Meteo
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
